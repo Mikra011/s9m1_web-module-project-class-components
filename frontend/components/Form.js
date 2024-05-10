@@ -5,7 +5,7 @@ export default class Form extends Component {
     name: ''
   }
 
-  onSubmit = (e) => {
+  onSubmit = e => {
     e.preventDefault()
     this.props.addTodo(this.state.name)
     this.setState({ name: '' })
